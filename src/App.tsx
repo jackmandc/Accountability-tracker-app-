@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="min-h-dvh bg-gray-50 flex flex-col max-w-lg mx-auto">
-      <PageHeader title={VIEW_TITLES[view]} />
+      <PageHeader title={VIEW_TITLES[view]} transparent={view === 'today'} />
       <main className="flex-1 overflow-y-auto pb-20">
         {view === 'today' && <TodayView />}
         {view === 'history' && <HistoryView />}
